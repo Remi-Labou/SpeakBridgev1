@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Speak Bridge</string>
+
+    <string name="bottom_language_item">Language</string>
+    <string name="bottom_QR_code_item">QR code</string>
+    <string name="bottom_scan_item">Scan</string>
+    <string name="bottom_settings_item">Paramètres</string>
+
+    <!-- Page d'accueil -->
+    <string name="language_page">Select language</string>
+
+    <!-- Page de generation de QR code -->
+    <string name="QR_code_page">Start conversation <br/> Scan me!</string>
+
+    <!-- Page de scan -->
+    <string name="scan_page">Join a conversation!</string>
+
+    <!-- Page de paramètre -->
+    <string name="settings_page_parameters">Parameters</string>
+    <string name="settings_page_about_us">About us</string>
+    <string name="settings_page_security">Security</string>
+    <string name="settings_page_assistance">Assistance </string>
+
+
+
+
+
+</resources>

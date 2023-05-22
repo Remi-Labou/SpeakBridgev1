@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/language_page"
+        android:title="@string/bottom_language_item"
+        android:icon="@drawable/ic_language"
+        />
+    <item
+        android:id="@+id/QRcode_page"
+        android:title="@string/bottom_QR_code_item"
+        android:icon="@drawable/ic_qrcode"
+        />
+    <item
+        android:id="@+id/Scan_page"
+        android:title="@string/bottom_scan_item"
+        android:icon="@drawable/ic_scan"
+        />
+    <item
+        android:id="@+id/Settings_page"
+        android:title="@string/bottom_settings_item"
+        android:icon="@drawable/ic_settings"
+        />
+</menu>

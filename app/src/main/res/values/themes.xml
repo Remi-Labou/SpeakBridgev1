@@ -1,0 +1,25 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Import AppCompat -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize other attributes as needed -->
+    </style>
+
+    <style name="Theme.SpeakBridge" parent="AppTheme">
+        <!-- Customize other attributes as needed -->
+    </style>
+
+    <!-- Creer le composant pour le texte classique-->
+    <style name="DefaultTextStyle" parent="Theme.AppCompat">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">sans-serif</item>
+    </style>
+
+    <!-- Creer le composant pour la barre du bas -->
+    <!--<style name="BottomNavigationStyle" parent="Widget.Design.BottomNavigationView">
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/kanit</item>
+    </style>-->
+
+</resources>
