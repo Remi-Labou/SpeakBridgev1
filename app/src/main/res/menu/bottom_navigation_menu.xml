@@ -16,8 +16,17 @@
         android:icon="@drawable/ic_scan"
         />
     <item
+        android:id="@+id/Conversation_page"
+        android:title="Conversation"
+        android:icon="@drawable/ic_phone"
+        />
+    <item
         android:id="@+id/Settings_page"
         android:title="@string/bottom_settings_item"
         android:icon="@drawable/ic_settings"
         />
+
+
+
+
 </menu>

@@ -10,7 +10,7 @@
     <string name="language_page">Select language</string>
 
     <!-- Page de generation de QR code -->
-    <string name="QR_code_page">Start conversation <br/> Scan me!</string>
+    <string name="QR_code_page">Start conversation </string>
 
     <!-- Page de scan -->
     <string name="scan_page">Join a conversation!</string>
@@ -20,6 +20,9 @@
     <string name="settings_page_about_us">About us</string>
     <string name="settings_page_security">Security</string>
     <string name="settings_page_assistance">Assistance </string>
+
+    <!-- Page d'appel -->
+    <string name ="call_page_off">Join a conversation!</string>
 
 
 

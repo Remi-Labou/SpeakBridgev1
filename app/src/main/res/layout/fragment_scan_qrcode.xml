@@ -10,13 +10,14 @@
         android:id="@+id/camera_surface_view"
         android:layout_width="match_parent"
         android:layout_height="500dp"
-        android:layout_marginTop="80dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/textView"
         style="@style/DefaultTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,13 +25,24 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="50dp"
         android:gravity="center"
-        android:text="Scan QR Code"
+        android:text="@string/scan_page"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
 
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/camera_surface_view" />
+
+    <ImageView
+        android:id="@+id/border_icon"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_phone_border"
+        app:layout_constraintBottom_toBottomOf="@+id/camera_surface_view"
+        app:layout_constraintEnd_toEndOf="@+id/camera_surface_view"
+        app:layout_constraintStart_toStartOf="@+id/camera_surface_view"
+        app:layout_constraintTop_toTopOf="@+id/camera_surface_view" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -30,7 +30,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
-        android:text="Generate QR Code"
+        android:text="@string/QR_code_page"
         android:textAllCaps="false" />
 
 </RelativeLayout>

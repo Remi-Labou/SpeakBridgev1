@@ -10,11 +10,14 @@ import androidx.recyclerview.widget.RecyclerView
 import fr.Remi.speakbridge.MainActivity
 import fr.Remi.speakbridge.R
 import fr.Remi.speakbridge.adapter.Drapeau_adapter
+import androidx.fragment.app.viewModels
 import fr.remi.speakbridge.DrapeauModel
 
 class LanguageFragment (
+
     private val context: MainActivity
         ): Fragment() {
+    private val flagViewModel: DrapeauModel by viewModels()
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         val view = inflater.inflate(R.layout.fragment_language, container, false)
@@ -46,6 +49,10 @@ class LanguageFragment (
         //enregistrer un huitieme drapeau
         drapeaulist.add(DrapeauModel("indien", "https://cdn.pixabay.com/photo/2012/04/10/23/03/india-26828_1280.png",false, 0.5F))
 
+
+        private fun getSelectedFlag(): DrapeauModel? {
+            return DrapeauModel().selectedFlag
+        }
 
 
         //recuperer le recycler view

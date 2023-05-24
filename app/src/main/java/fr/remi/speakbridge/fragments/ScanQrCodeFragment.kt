@@ -97,7 +97,7 @@ class ScanQrCodeFragment : Fragment() {
     override fun onPause() {
         super.onPause()
         if (::cameraSource.isInitialized) {
-            cameraSource.release()
+            cameraSource.stop()
         }
     }
 

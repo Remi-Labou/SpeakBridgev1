@@ -11,24 +11,21 @@ import fr.Remi.speakbridge.MainActivity
 import fr.Remi.speakbridge.R
 import fr.remi.speakbridge.DrapeauModel
 
-class Drapeau_adapter (
+class Drapeau_adapter(
     private val context: MainActivity,
     private val drapeauList: List<DrapeauModel>
-        ): RecyclerView.Adapter<Drapeau_adapter.ViewHolder>(){
+) : RecyclerView.Adapter<Drapeau_adapter.ViewHolder>() {
 
-    //boite pour ranger tous les composants à controller
-    class ViewHolder(view: View): RecyclerView.ViewHolder(view){
-        //image du drapeau
-        val drapeauImage = view.findViewById<ImageView>(R.id.image_item)
-        val drapeauSelect = view.findViewById<ImageView>(R.id.image_item)
-
-
+    // Boite pour ranger tous les composants à contrôler
+    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        // Image du drapeau
+        val drapeauImage: ImageView = view.findViewById(R.id.image_item)
+        val drapeauSelect: ImageView = view.findViewById(R.id.image_item)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_drapeaux, parent, false)
         return ViewHolder(view)
-
     }
 
     override fun getItemCount(): Int {
@@ -36,10 +33,10 @@ class Drapeau_adapter (
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        //recuperer les informations du drapeau
+        // Récupérer les informations du drapeau
         val currentDrapeau = drapeauList[position]
 
-        //recupeter l'image et l'ajouter à son composant
+        // Récupérer l'image et l'ajouter à son composant
         Glide.with(context).load(Uri.parse(currentDrapeau.imageURL)).into(holder.drapeauImage)
 
         // Set the opacity based on the selected state
@@ -58,6 +55,5 @@ class Drapeau_adapter (
             // Notify adapter about the data change
             notifyDataSetChanged()
         }
-
     }
 }
